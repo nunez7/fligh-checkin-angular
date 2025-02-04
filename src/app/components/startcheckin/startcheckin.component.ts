@@ -25,9 +25,10 @@ export class StartcheckinComponent {
 
         if(data != null){
           this.router.navigate(['/checkin']);
+        }else{
+          this.router.navigate(['/error-page']);
         }
 
-        this.router.navigate(['/error-page']);
 
       },      
     )
